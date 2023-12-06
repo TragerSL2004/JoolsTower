@@ -8,4 +8,6 @@ public:
 	void update();
 	void end();
 	void run();
+private:
+	int roomNum;
 };
