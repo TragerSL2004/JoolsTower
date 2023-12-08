@@ -8,13 +8,14 @@ public:
 	/// <param name="damage">The amount of damage this weapon can subtract from an enemy's hp.</param>
 	Weapon(char name[], float damage);
 
-	char* getName();
+	const char* getName();
 	float getDamage();
-	char* setName(char* newName);
+	const char* setName(char* newName);
 	float setDamage(float newDamage);
 
 	Weapon evolveWeapon();
 private:
-	char* m_name;
+	const char* m_name;
 	float m_damage;
+	Weapon* weapons;
 };

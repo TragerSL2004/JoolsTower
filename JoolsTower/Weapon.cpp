@@ -10,7 +10,7 @@ Weapon::Weapon(char name[], float damage)
 	m_name = name;
 	m_damage = damage;
 }
-char* Weapon::getName()
+const char* Weapon::getName()
 {
 	return m_name;
 }
@@ -18,7 +18,7 @@ float Weapon::getDamage()
 {
 	return m_damage;
 }
-char* Weapon::setName(char* newName)
+const char* Weapon::setName(char* newName)
 {
 	m_name = newName;
 	return m_name;
